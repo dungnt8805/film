@@ -29,6 +29,8 @@ class AuthController extends BaseController
      */
     public function postRegister()
     {
+        if(Sentry::check())
+            return Redirect::route('account');
         $rules = array(
             'username' => 'required|alpha_dash|unique:users,username|min:4',
             'email' => 'required|email|unique:users,email',

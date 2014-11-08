@@ -9,7 +9,7 @@
         "cartalyst/sentry": "2.1.*",
         "imagine/imagine": "dev-master",
         "jasonnz/jinput": "dev-master",
-        "teepluss/theme": "dev-master"
+        "artdarek/oauth-4-laravel": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

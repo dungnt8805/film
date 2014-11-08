@@ -122,7 +122,7 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',
-        'Teepluss\Theme\ThemeServiceProvider',
+        'Artdarek\OAuth\OAuthServiceProvider',
     ),
 
     /*
@@ -190,7 +190,7 @@ return array(
         'Validator' => 'Illuminate\Support\Facades\Validator',
         'View' => 'Illuminate\Support\Facades\View',
         'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-        'Theme' => 'Teepluss\Theme\Facades\Theme',
+        'OAuth' => 'Artdarek\OAuth\Facade\OAuth',
 
     ),
 

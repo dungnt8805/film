@@ -1,0 +1,1 @@
+@extends('shareiz/frontend/layouts/place')

@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return View::make('hello');
-});
+Route::get('/', 'Frontend\HomeController@getIndex');
 
 Route::get('register', array('as' => 'register', 'uses' => 'AuthController@getRegister'));
 Route::get('login', array('as' => 'login', 'uses' => 'AuthController@getLogin'));
-Route::post('register','AuthController@postRegister');
+Route::post('register', 'AuthController@postRegister');
+
+// login with open id
+Route::group(array('prefix' => 'oauth'), function () {
+    Route::get('session/facebook', array('as' => 'sigin-facebook', 'uses' => 'OAuthController@getLoginWithFacebook'));
+});
